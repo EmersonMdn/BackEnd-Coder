@@ -14,23 +14,23 @@
     "likes": []
   },
   {
-    "title": "Pizza peperoni",
-    "price": 132,
+    "title": "Empanada de carne",
+    "price": 999,
     "thumbnail": "www.examples.com/products/jabon",
     "id": 3,
     "likes": []
   },
   {
-    "title": "Pizza peperoni",
-    "price": 132,
+    "title": "Fideos con crema",
+    "price": 12,
     "thumbnail": "www.examples.com/products/jabon",
     "id": 4,
     "likes": []
   },
   {
-    "title": "Pizza peperoni",
-    "price": 132,
-    "thumbnail": "www.examples.com/products/jabon",
+    "title": "Canelones",
+    "price": "59",
+    "thumbnail": "https://picsum.photos/200",
     "id": 5,
     "likes": []
   }

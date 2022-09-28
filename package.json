@@ -1,0 +1,23 @@
+{
+  "name": "afters",
+  "version": "1.0.0",
+  "description": "Avance de lo viste en los afters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmersonMdn/aftersBack.git"
+  },
+  "author": "Emerson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmersonMdn/aftersBack/issues"
+  },
+  "homepage": "https://github.com/EmersonMdn/aftersBack#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  }
+}

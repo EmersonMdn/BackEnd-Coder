@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new product</title>
+  </head>
+  <body>
+    <form method="POST" action="/api/product">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title-input" />
+
+      <label for="price">Price</label>
+      <input type="number" name="price" id="price-input" />
+
+      <label for="thumbnail">Thumbnail</label>
+      <input type="text" name="thumbnail" id="thumbnail" />
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>

@@ -1,6 +1,4 @@
 const fs = require("fs");
-// const express = require("express");
-// const app = express();
 
 class Product {
   constructor(file) {
@@ -46,7 +44,11 @@ class Product {
     const products = JSON.parse(data);
     const findProduct = products.find((item) => item.id == id);
 
-    return findProduct ? findProduct : "Product not found";
+    if (findProduct) {
+      return findProduct;
+    } else {
+      throw new Error("Product not found");
+    }
   }
 
   //obtener likes de usuarios
@@ -114,14 +116,14 @@ class Product {
   }
 }
 
-async function start() {
-  const db = new Product("data");
-  const products = await db.newProduct({
-    title: "Pizza peperoni",
-    price: 132,
-    thumbnail: "www.examples.com/products/jabon",
-  });
+// async function start() {
+//   const db = new Product("data");
+//   const products = await db.newProduct({
+//     title: "Pizza peperoni",
+//     price: 132,
+//     thumbnail: "www.examples.com/products/jabon",
+//   });
 
-}
+// }
 
-start();
+module.exports = Product;
