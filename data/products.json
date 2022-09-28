@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Pizza",
+    "price": 32,
+    "thumbnail": "www.examples.com/products/jabon",
+    "id": 1,
+    "likes": []
+  },
+  {
+    "title": "Pizza peperoni",
+    "price": 132,
+    "thumbnail": "www.examples.com/products/jabon",
+    "id": 2,
+    "likes": []
+  },
+  {
+    "title": "Pizza peperoni",
+    "price": 132,
+    "thumbnail": "www.examples.com/products/jabon",
+    "id": 3,
+    "likes": []
+  },
+  {
+    "title": "Pizza peperoni",
+    "price": 132,
+    "thumbnail": "www.examples.com/products/jabon",
+    "id": 4,
+    "likes": []
+  },
+  {
+    "title": "Pizza peperoni",
+    "price": 132,
+    "thumbnail": "www.examples.com/products/jabon",
+    "id": 5,
+    "likes": []
+  }
+]
