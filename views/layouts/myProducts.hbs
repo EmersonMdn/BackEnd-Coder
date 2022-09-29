@@ -1,11 +1,25 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My products</title>
-  </head>
+  {{>head}}
   <body>
+    <body>
+    <div id="add-product">
+      <h2>Add new product</h2>
+        <form method="POST" action="/api/product">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title-input" placeholder="Write title"/>
+
+          <label for="price">Price</label>
+          <input type="number" name="price" id="price-input" placeholder="Put price"/>
+
+          <label for="thumbnail">Thumbnail</label>
+          <input type="text" name="thumbnail" id="thumbnail" placeholder="Thumbnail url"/>
+
+          <button>Enviar</button>
+      </form>
+    </div>
+    
+  <div id="list-products">
+    <h2>Products</h2>
     <table>
       <thead>
         <tr>
@@ -15,15 +29,29 @@
         </tr>
       </thead>
 
-      <tbody>
-        {{#each items}}
-          <tr>
-            <td>{{this.title}}</td>
-            <td>{{this.price}}</td>
-            <td>{{this.thumbnail}}</td>
-          </tr>
-        {{/each}}
+      <tbody id="tbody">
       </tbody>
     </table>
+  </div>
+
+  <div id="chat-box">
+    <h3>Chat with us!</h3>
+    <form onsubmit="return sendMessage(this)">
+      <input type="email"  id="mailInput" placeholder="Ingrese su mail" required>
+      <ul id="messages"></ul>
+      <input type="text" id="messageInput" placeholder="Write message">
+      <button>Enviar</button>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>

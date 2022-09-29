@@ -114,6 +114,26 @@ class Product {
       return [];
     }
   }
+
+  async getMessages() {
+    try {
+      const data = await fs.promises.readFile(
+        `${this.file}/chat.json`,
+        "utf-8"
+      );
+      return JSON.parse(data);
+    } catch (err) {
+      return [];
+    }
+  }
+
+  async newMessage(objMessage) {
+    const data = await this.getMessages();
+    data.push(objMessage);
+    const dataString = JSON.stringify(data);
+    await fs.promises.writeFile(`${this.file}/chat.json`, dataString);
+    return data;
+  }
 }
 
 // async function start() {
